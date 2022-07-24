@@ -61,7 +61,7 @@
       <section class="main section-wrap section">
         <div class="container">
           <h1 class="general-info">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="main-button btn">Заказать услугу</button>
+          <button type="button" class="main-button btn" data-modal-open>Заказать услугу</button>
         </div>
       </section>
       <section class="section description">
@@ -601,13 +601,13 @@
     <!-- Modal window -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="button-close" type="button" data-modal-close>
-          <svg width="18" height="18">
+        <button class="button-close" data-modal-close>
+          <svg class="modal-btn-icon" width="18" height="18">
             <use href="./images/icons.svg#vector"></use>
           </svg>
         </button>
       </div>
     </div>
-    <script src="/js/modal.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
