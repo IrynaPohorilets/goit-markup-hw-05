@@ -82,25 +82,28 @@ padding: 94px 0;
   color: #212121;
   align-items: center;
   gap: 50px;
+
 }
 /**
   |============================
   | Фонове зображення-початок
   |============================
 */
-
-.header-list::after {
+.current {
+  position: relative;
+  color: #2196F3;
+}
+.current::after {
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   left: 0;
-  z-index: 100;
-
+  
   content: '';
   height: 4px;
   width: 100%;
 
   border-radius: 2px;
-background-color: #2196F3;
+  background-color: #2196F3;
 }
 
 /**
@@ -485,6 +488,7 @@ padding-bottom: 20px ;
 padding-right: 24px;
 padding-left: 24px;
 }
+
 .work-cart-about{
   text-decoration: none;
 }
@@ -508,7 +512,45 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1p
   color: #757575;
   text-decoration: none;
 }
+/**
+|============================
+| Синій оверлей на картках-початок
+|============================
+*/
 
+.work-thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.work-overlay {
+position: absolute;
+width: 100%;
+height: 100%;
+padding: 63px 24px;
+background-color: #2196F3;
+transform: translateY(0);
+transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.work-cart-about:hover .work-overlay,
+.work-cart-about:focus .work-overlay {
+transform: translateY(-100%);
+}
+
+.overlay-desc{
+font-weight: 400;
+font-size: 18px;
+line-height: 1.55;
+letter-spacing: 0.03em;
+color: #EEEEEE;
+}
+
+/**
+|============================
+| Синій оверлей на картках-кінець
+|============================
+*/
 .work-button{
   display: flex;
   gap: 8px;
