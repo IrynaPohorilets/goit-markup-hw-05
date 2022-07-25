@@ -91,35 +91,36 @@ padding: 94px 0;
 */
 .header-item-current {
   position: relative;
-  color: var(--accent-text-color);
+  color: #2196f3;
+  padding-bottom: 32px
 }
 .header-item-current::after {
-  content: '';
   position: absolute;
-  bottom: 0;
-
+bottom: 0;
+left: 0;  
+  content: "";
   display: block;
-  width: 100%;
-  height: 4px;
-
-  background: #2196f3;
-  border-radius: 2px;
+width: 100%;
+height: 4px;
+border-radius: 2px;
+background-color: #2196f3
 }
+
 .header-item-current-section {
   position: relative;
-  color: var(--accent-text-color);
+  color: #2196f3;
+  padding-bottom: 32px
 }
 .header-item-current-section::after {
-  content: '';
   position: absolute;
-  bottom: -1px;
-
+bottom: 0;
+left: 0;  
+  content: "";
   display: block;
-  width: 100%;
-  height: 4px;
-
-  background: #2196f3;
-  border-radius: 2px;
+width: 100%;
+height: 4px;
+border-radius: 2px;
+background-color: #2196f3
 }
 /**
   |============================
@@ -361,7 +362,7 @@ border: 1px solid rgba(33, 150, 243, 1);
 */
 /**
 |============================
-| Оверлей Студія-початок
+| Текст з фоном на картинках р. Студія-початок
 |============================
 */
 .about-item {
@@ -391,7 +392,7 @@ border: 1px solid rgba(33, 150, 243, 1);
 
 /**
 |============================
-| Оверлей Студія-кінець
+| Текст з фоном на картинках р. Студія-кінець
 |============================
 */
 .about-title:not(:first-child) {
