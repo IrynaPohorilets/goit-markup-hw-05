@@ -89,23 +89,38 @@ padding: 94px 0;
   | Фонове зображення-початок
   |============================
 */
-.current {
+.header-item-current {
   position: relative;
-  color: #2196F3;
+  color: var(--accent-text-color);
 }
-.current::after {
+.header-item-current::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+
+  display: block;
+  width: 100%;
+  height: 4px;
+
+  background: #2196f3;
+  border-radius: 2px;
+}
+.header-item-current-section {
+  position: relative;
+  color: var(--accent-text-color);
+}
+.header-item-current-section::after {
+  content: '';
   position: absolute;
   bottom: -1px;
-  left: 0;
-  
-  content: '';
-  height: 4px;
+
+  display: block;
   width: 100%;
+  height: 4px;
 
+  background: #2196f3;
   border-radius: 2px;
-  background-color: #2196F3;
 }
-
 /**
   |============================
   | Фонове зображення-кінець
@@ -342,6 +357,55 @@ border: 1px solid rgba(33, 150, 243, 1);
 /**
 |============================
 | Характеристика компанії іконки-кінець
+|============================
+*/
+/**
+|============================
+| Оверлей Студія-початок
+|============================
+*/
+
+.about-list {
+--items: 3;
+}
+
+.about-item {
+position: relative;
+display: block;
+    width: calc((100% -60px) / 3);
+}
+.overlay {
+  position: absolute;
+  background-color: rgba(47, 48, 58, 0.8);
+  top: 0;
+  left: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 70px;
+}
+.overlay-text {
+      position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 27px 0px;
+    color: #FFFFFF;
+    background-color: rgba(47, 48, 58, 0.8);;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+ 
+}
+/**
+|============================
+| Оверлей Студія-кінець
 |============================
 */
 .about-title:not(:first-child) {
