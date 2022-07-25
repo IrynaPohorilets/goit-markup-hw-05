@@ -364,45 +364,31 @@ border: 1px solid rgba(33, 150, 243, 1);
 | Оверлей Студія-початок
 |============================
 */
-
-.about-list {
---items: 3;
-}
-
 .about-item {
-position: relative;
-display: block;
-    width: calc((100% -60px) / 3);
+  position: relative;
+  display: block;
+  width: calc((100% -60px) / 3);
 }
-.overlay {
+
+.project-text {
   position: absolute;
-  background-color: rgba(47, 48, 58, 0.8);
-  top: 0;
   left: 0;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
+  bottom: 0;
   width: 100%;
-  height: 70px;
-}
-.overlay-text {
-      position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    padding: 27px 0px;
-    color: #FFFFFF;
-    background-color: rgba(47, 48, 58, 0.8);;
+
+  text-align: center;
+  padding: 27px 0px;
+  color: #FFFFFF;;
+ 
+   background-color: rgba(47, 48, 58, 0.8);;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
- 
+
 }
+
 /**
 |============================
 | Оверлей Студія-кінець
